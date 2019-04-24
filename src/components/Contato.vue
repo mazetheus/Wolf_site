@@ -5,7 +5,7 @@
         <div class="mx-auto">
           <div class="row">
             <div class="col-10 col-md-11">
-              <h6 class="">(84) 99452-4755 <a href="https://api.whatsapp.com/send?phone=5584994524755" target="_blank"><font-awesome-icon class="fa-icon whats" :icon="['fab', 'whatsapp']"></font-awesome-icon></a></h6>
+              <h6 class="">(84) 99452-4755 &nbsp;&nbsp; <a href="https://api.whatsapp.com/send?phone=5584994524755" target="_blank"><font-awesome-icon class="fa-icon whats" :icon="['fab', 'whatsapp']"></font-awesome-icon></a></h6>
               <h6 class="rua"><strong>ED. TIROL WAY, TORRE OFFICE<br>SALA 601</strong></h6>
             </div>
           </div>

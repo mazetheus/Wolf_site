@@ -26,6 +26,11 @@
 
 <style scoped>
 
+  .consultorio {
+    margin-top: -20px;
+    padding-bottom: 0px;
+  }
+
   .fotos-consultorio{
     padding-bottom: 50px;
   }
@@ -36,8 +41,12 @@
   }
 
   .consultorio-content {
-    color: #737373;
+
     margin: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
   .hover-shadow{
@@ -68,8 +77,8 @@
       padding: 0px;
     }
 
-    .consultorio-content {
-      width: 100%;
+    .consultorio-header{
+      font-size: 30px;
     }
 
     .hover-shadow{

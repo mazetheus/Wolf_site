@@ -8,7 +8,7 @@
       </div>
       <div class="col-md-6 col-12 text-left p-4">
           <h1 class="sobre-header">Sobre</h1>
-          <p class="sobre-content">Dr. Pedro Paulo Gaag é formado em Odontologia pela Universidade Federal do Rio Grande do Norte desde 2006 e é especialista em ortodontia pela Academia Norte Riograndense de Odontologia. Pós-graduado em Odontologia Estética, Restaurações Estéticas e em Clareamento Dental, é também autor de diversos artigos relacionados à ortodontia e membro da ABOR. Além disso, cumpre seu papel como cidadão brasileiro a serviço da Marinha do Brasil, onde é Primeiro Tenente.</p>
+          <p class="sobre-content">Dr. Pedro Paulo Gaag é formado em Odontologia pela Universidade Potiguar desde 2006 e é especialista em ortodontia pela Academia Norte Riograndense de Odontologia. Pós-graduado em Odontologia Estética, Restaurações Estéticas e em Clareamento Dental, é também autor de diversos artigos relacionados à ortodontia e membro da ABOR. Além disso, cumpre seu papel como cidadão brasileiro a serviço da Marinha do Brasil, onde é Primeiro Tenente.</p>
       </div>
   </div>
   </div>
@@ -37,8 +37,8 @@
     color: #2e9190;
   }
 
-  .sobre-texto {
-    padding: 0px 26px;
+  .sobre-content {
+    padding: 0px 10px;
   }
 
   

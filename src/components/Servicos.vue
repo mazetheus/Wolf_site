@@ -128,6 +128,7 @@
 	.servicos{
 		padding: 5px;
 		padding-bottom: 20px;
+		height: 300px;
 	}
 	.servicos-header{
 		font-size: 30px;

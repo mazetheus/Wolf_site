@@ -20,7 +20,7 @@
       </div>
     </nav>
     <div class="">
-      <img class="img-banner" src="../assets/banner2.jpg"/>
+      <img class="img-banner" src="../assets/banner2.png"/>
     </div>
   </div>
 </template>

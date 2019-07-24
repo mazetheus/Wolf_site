@@ -1,88 +1,77 @@
 <template>
-  <div class="contato text-left row" id="contato">
-    <div class="row mx-auto w-100 p-0">
-      <div class="info col-12 col-md-6 align-self-center">
-        <div class="mx-auto">
-          <div class="row">
-            <div class="col-10 col-md-11">
-              <h6 class="">(84) 99452-4755 &nbsp;&nbsp; <a href="https://api.whatsapp.com/send?phone=5584994524755" target="_blank"><font-awesome-icon class="fa-icon whats" :icon="['fab', 'whatsapp']"></font-awesome-icon></a></h6>
-              <h6 class="rua"><strong>ED. TIROL WAY, TORRE OFFICE<br>SALA 601</strong></h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 p-0">
-        <iframe class="w-100 mx-auto mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15877.344136342035!2d-35.2037009!3d-5.808129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73a82f2812300476!2sTirol+way+office!5e0!3m2!1spt-BR!2sbr!4v1553097285630" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
+  <b-row class="contato align-middle" id="contato">
+    <b-col class="col-12 col-lg-5 text-left informacoes justify-content-lg-center">
+      <p><span>TELEFONE</span> – (84) 99949-3200 <br>
+        <span>EMAIL</span> – wolf@clubedetiro.com.br<br>
+        <span>INSTAGRAM</span> - @wolfclubedetiro<br>
+        <span>ENDEREÇO</span> – BR 304, Parque de Exposições, Parnamirim / RN
+      </p>
+    </b-col>
+    <b-col class="col-12 col-lg-4 local">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.7758036064506!2d-35.27440568523245!3d-5.887093995734885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTMuNSJTIDM1wrAxNicyMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1557425213822!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </b-col>
+    <b-col class="col-12 col-lg-3 horarios text-center">
+      <b-img center class="logo" src="../assets/logo-horario.png" />
+      <table>
+      <tr>
+        <th>Segunda</th>
+        <th>08h00 &gt; 18h00</th>
+      </tr>
+      <tr>
+        <td>Terça</td>
+        <td>08h00 &gt; 18h00</td>
+      </tr>
+      <tr>
+        <td>Quarta</td>
+        <td>08h00 &gt; 18h00</td>
+      </tr>
+      <tr>
+        <td>Quinta</td>
+        <td>08h00 &gt; 18h00</td>
+      </tr>
+      <tr>
+        <td>Sexta</td>
+        <td>08h00 &gt; 18h00</td>
+      </tr>
+      <tr>
+        <td>Sábado</td>
+        <td>08h00 &gt; 18h00</td>
+      </tr>
+    </table>
+    </b-col>
+  </b-row>
 </template>
 
-<script>
-export default {
-  name: "Contato"
+
+
+<style>
+.contato{
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
 }
-</script>
-
-<style scoped>
-  .contato {
-    padding: 15px;
-    -webkit-box-shadow: 0px -5px 10px -5px rgba(46,145,144,0.5);
-    -moz-box-shadow: 0px -5px 10px -5px rgba(46,145,144,0.5);
-    box-shadow: 0px -5px 10px -5px rgba(46,145,144,0.5);
-  }
-
- .whats{
-    position:relative;
-    width:30px;
-    height:30px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:60px;
-    box-shadow: 2px 2px 3px #999;
-    z-index:100000;
-  }
-
-
-  .whats:hover {
-    color: #fff;
-    box-shadow: 2px 2px 3px #666;
-    background-color: #1ea851;
-  }
-
-  .mapa{
-    height: 300px;
-    padding-right: 100px;
-  }
-
-  .rua {
-    font-size: 25px;
-    color: #2e9190;
-    padding-top: 5px;
-  }
-
-  .info {
-    text-align: right;
-  }
-
-  .map-icon {
-    color: #fb9527;
-    font-size: 28px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .mapa{
-      padding: 5px 5px;
-      height: 100px;
-    }
-
-    .info {
-      text-align: center;
-      padding: 10px;
-      padding-left: 40px;
-      padding-right: 0px;
-    }
-  }
+.informacoes{
+  padding: 50px;
+  color: #2f2f2f;
+}
+.local{
+  padding: 10px;
+  filter: grayscale(100%);
+}
+.horarios{
+  background-color: #9b9b9b;
+  padding: 0px;
+  color: white;
+}
+td, th {
+  border: none;
+}
+tr:nth-child(even) {
+  background-color: #2f2f2f;
+}
+.logo{
+  width: 20%;
+  padding-top: 20px;
+}
+  
 </style>

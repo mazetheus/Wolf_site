@@ -2,9 +2,9 @@
   <div id="app">
     <navbar/>
     <div class="container-fluid">
-      <consultorio/>
-      <sobre/>
+      <missao/>
       <servicos/>
+      <cursos/>
       <contato/>
     </div>
     <Footer/>
@@ -14,18 +14,21 @@
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Consultorio from './components/Consultorio.vue'
-import Sobre from './components/Sobre.vue'
+import Cursos from './components/Cursos.vue'
+import Missao from './components/Missao.vue'
 import Servicos from './components/Servicos.vue'
 import Contato from './components/Contato.vue'
 import Footer from './components/Footer.vue'
+
+window.$ = require('jquery')
+window.JQuery = require('jquery')
 
 export default {
   name: 'app',
   components: {
     Navbar,
-    Consultorio,
-    Sobre,
+    Cursos,
+    Missao,
     Servicos,
     Contato,
     Footer
@@ -40,6 +43,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 #app {
   font-family: 'Lato', 'Avenir', Helvetica, Arial, sans-serif;

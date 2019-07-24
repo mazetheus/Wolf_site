@@ -1,7 +1,5 @@
 <template>
   <div class="header container-fluid p-0">
-    <div class="slide">
-    </div>
     <nav class="navbar navbar-expand-lg navbar-light w-100">
       <a class="navbar-brand" href="/"><img src="@/assets/logo.png" class="img img-fluid"/></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav"
@@ -14,13 +12,31 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" style="color: #bbb !important;" href="https://www.instagram.com/dr.pedropaulogaag/" target="_black"><font-awesome-icon class="instagram-icon" :icon="['fab', 'instagram']"></font-awesome-icon></a>
+            <a class="nav-link" href="https://www.instagram.com/wolfclubedetiro/" target="_black"><font-awesome-icon class="instagram-icon" :icon="['fab', 'instagram']"></font-awesome-icon></a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="">
-      <img class="img-banner" src="../assets/banner2.png"/>
+  <div>
+      <b-carousel
+        id="carousel-banner"
+        v-model="slide"
+        :interval="4000"
+        controls
+        indicators
+        background="#ababab"
+        img-width="100%"
+        img-height="auto"
+        style="text-shadow: 1px 1px 2px #333;"
+        @sliding-start="onSlideStart"
+        @sliding-end="onSlideEnd"
+      >
+        <b-carousel-slide
+          caption="O CLUBE"
+          text="Somos mais que um clube e escola de tiro, somos a melhor opção no Rio Grande do Norte para a prática do esporte do tiro."
+          img-src="../assets/banner.jpg"
+        ></b-carousel-slide>
+      </b-carousel>
     </div>
   </div>
 </template>
@@ -33,8 +49,8 @@ export default {
   data () {
     return {
       menu: [
-        {name: 'nosso consultorio', link: '#consultorio'},
-        {name: 'sobre', link: '#sobre'},
+        {name: 'nosso cursos', link: '#consultorio'},
+        {name: 'missao', link: '#missao'},
         {name: 'tratamentos', link: '#servicos'},
         {name: 'contato', link: '#contato'}
       ],
@@ -67,42 +83,22 @@ export default {
 
 <style scoped>
   .navbar {
-    padding: 0px 48px;
+    padding: 5px 48px;
     background: #fff;
-    color: #414141;
+    margin-top: 15px;
+    color: #2f2f2f;
     z-index: 110; 
     border: none;
-  }
-
-  .logo-banner{
-    width: 10%;
-    height: auto;
-  }
-
-  .img-banner{
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-item {
-    border: none;
+    position: absolute;
   }
 
   .nav-item a {
-    color: #414141 !important;
+    color: #2f2f2f !important;
   }
 
   .navbar-brand {
-    width: 5%;
+    width: 10%;
     padding: 5spx;
-  }
-
-  .slide-text {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: 156px;
   }
 
   .vertical-align {
@@ -113,49 +109,14 @@ export default {
     transform: translateY(-50%); /* Adicionar os prefixos dos navegadores */
   }
 
-  .slide-text h1 {
-    font-size: 5vw;
-  }
 
-  .slide-text a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .confira {
-    font-size: 2vw;
-    padding: 32px 0px;
-  }
-
-  .confira strong {
-    font-size: 24px;
-  }
-
-  .btn-link {
-    border: none;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .btn-link:hover .arrow-down {
-    background: #fff;
-    transition: background 0.2s ease;
-  }
-
-  .btn-link:hover .arrow-down-icon {
-    color: #000;
-
-    transition: color 0.2s ease;
-  }
-
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     .navbar-collapse {
       background: #fff;
     }
 
     .navbar-toggler {
-      border-color: #414141;
+      border: 0px;
     }
 
     .navbar-brand {
@@ -166,15 +127,7 @@ export default {
     .nav-link {
       color: #000 !important;
     }
-  }
 
-  @media (max-width: 768px) {
-    .slide-text {
-      padding: 0px 0px 0px 108px;
-    }
-  }
-
-  @media (max-width: 576px) {
     .navbar-brand {
       width: 15vw;
       padding: 8px;
@@ -207,10 +160,10 @@ export default {
     .navbar {
       padding: 0px 24px;
     }
-  }
 
-  .instagram-icon {
-    font-size: 24px;
+    .instagram-icon {
+      font-size: 24px;
+    }
   }
   
 </style>
